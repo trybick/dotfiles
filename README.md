@@ -4,9 +4,10 @@
 
 * Install command-line tools: `xcode-select --install`
 * Install Homebrew 
-  * Paste in terminal: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-  * Once complete, ensure successful `brew update && brew doctor`
-* Install nvm/node 
+  * Paste in terminal:  
+  `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+  * Once complete, ensure successful: `brew update && brew doctor`
+* Install nvm/node  
   * `brew install nvm`
   * `mkdir ~/.nvm`
   * `nvm install node`
