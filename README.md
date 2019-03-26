@@ -1,5 +1,5 @@
 ## dotfiles
-These files contain backups of my config files.
+This repo contains backups of my config files and a ReadMe with new PC setup information.
 
 ## New Mac Setup
 * Install command-line tools: `xcode-select --install`
@@ -11,6 +11,7 @@ These files contain backups of my config files.
   * `brew install nvm`
   * `mkdir ~/.nvm`
   * `nvm install node`
+ * Currently used programs: Google Chrome, VSCode, Slack, Docker, Evernote, Spotify, VLC, Trello, MySQLWorkbench, Firefox, FileZilla, Clipy, Amphetamine
 
 ## Terminal Setup
 #### Terminal theme
