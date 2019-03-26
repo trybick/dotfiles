@@ -11,18 +11,18 @@
  * Currently used programs: Google Chrome, VSCode, Slack, Docker, Evernote, Spotify, VLC, Trello, MySQLWorkbench, Firefox, FileZilla, Clipy, Amphetamine
 
 ## Terminal Setup
-#### Terminal theme
+### Terminal theme
 * Install `solarized-dark` theme: https://ethanschoonover.com/solarized/
 
-#### git auto-completion
+### git auto-completion
 https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion  
 * `brew install bash-completion`
 
-#### bash-git-prompt
+### bash-git-prompt
 https://github.com/magicmonty/bash-git-prompt  
 * `brew install bash-git-prompt`
 
-#### diff-so-fancy
+### diff-so-fancy
 https://github.com/so-fancy/diff-so-fancy  
 * `brew install diff-so-fancy`
 * Configure git to use globally: `git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"`
