@@ -1,4 +1,4 @@
-This repo contains backups of my config files and a ReadMe with new PC setup information.
+#### This repo contains backups of my config files and a ReadMe with new PC setup information.
 
 ## New Mac Setup
 * Install command-line tools: `xcode-select --install`
