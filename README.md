@@ -1,4 +1,3 @@
-## dotfiles
 This repo contains backups of my config files and a ReadMe with new PC setup information.
 
 ## New Mac Setup
