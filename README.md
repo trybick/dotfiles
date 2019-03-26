@@ -12,12 +12,14 @@
 
 ## Terminal Setup
 #### Terminal theme
-* Install `solarized-dark` theme https://ethanschoonover.com/solarized/
+* Install `solarized-dark` theme: https://ethanschoonover.com/solarized/
 
 #### git auto-completion
+https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion  
 * `brew install bash-completion`
 
 #### bash-git-prompt
+https://github.com/magicmonty/bash-git-prompt  
 * `brew install bash-git-prompt`
 
 #### diff-so-fancy
