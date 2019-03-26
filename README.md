@@ -1,4 +1,4 @@
-## New Mac Setup
+# New Mac Setup
 * Install command-line tools: `xcode-select --install`
 * Install Homebrew 
   * Paste in terminal:  
@@ -10,7 +10,7 @@
   * `nvm install node`
  * Currently used programs: Google Chrome, VSCode, Slack, Docker, Evernote, Spotify, VLC, Trello, MySQLWorkbench, Firefox, FileZilla, Clipy, Amphetamine
 
-## Terminal Setup
+# Terminal Setup
 ### Terminal theme
 * Install `solarized-dark` theme: https://ethanschoonover.com/solarized/
 
@@ -28,7 +28,7 @@ https://github.com/so-fancy/diff-so-fancy
 * Configure git to use globally: `git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"`
 * Add options for different colors (found on their github)
 
-## Mac OSX Settings
+# Mac OSX Settings
 * Disable `Cmd + M` shorctut
   * Go to System Preferences > Keyboard > Shortcuts > App Shortcuts
   * Click the Plus Button button below
