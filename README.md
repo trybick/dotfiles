@@ -1,7 +1,7 @@
-# dotfiles
+## dotfiles
+These files contain backups of my config files.
 
-## New Mac PC setup
-
+## New Mac Setup
 * Install command-line tools: `xcode-select --install`
 * Install Homebrew 
   * Paste in terminal:  
@@ -12,13 +12,9 @@
   * `mkdir ~/.nvm`
   * `nvm install node`
 
-## Terminal setup
-
-#### diff-so-fancy
-https://github.com/so-fancy/diff-so-fancy  
-* `brew install diff-so-fancy`
-* Configure git to use globally: `git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"`
-* Add options for different colors (found on their github)
+## Terminal Setup
+#### Terminal theme
+* Install `solarized-dark` theme https://ethanschoonover.com/solarized/
 
 #### git auto-completion
 * `brew install bash-completion`
@@ -26,10 +22,13 @@ https://github.com/so-fancy/diff-so-fancy
 #### bash-git-prompt
 * `brew install bash-git-prompt`
 
-#### Terminal theme
-* Install `solarized-dark` theme https://ethanschoonover.com/solarized/
+#### diff-so-fancy
+https://github.com/so-fancy/diff-so-fancy  
+* `brew install diff-so-fancy`
+* Configure git to use globally: `git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"`
+* Add options for different colors (found on their github)
 
-## Mac OSX settings
+## Mac OSX Settings
 * Disable `Cmd + M` shorctut
   * Go to System Preferences > Keyboard > Shortcuts > App Shortcuts
   * Click the Plus Button button below
