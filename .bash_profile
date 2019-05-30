@@ -19,6 +19,7 @@ __git_complete gco _git_checkout
 __git_complete ga _git_add
 __git_complete gd _git_diff
 __git_complete gb _git_branch
+__git_complete gpo _git_branch
 
 # Git Bash Prompt settings
 GIT_PROMPT_ONLY_IN_REPO=0
