@@ -15,7 +15,8 @@
 
 ### Terminal theme
 
-- Install `solarized-dark` theme: https://ethanschoonover.com/solarized/
+- solarized-dark theme: https://ethanschoonover.com/solarized/
+- monokai theme: https://github.com/stephenway/monokai.terminal/blob/master/README.md
 
 ### git auto-completion
 
