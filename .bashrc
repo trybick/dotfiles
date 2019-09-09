@@ -4,8 +4,7 @@
   [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
 
 # Editor
-export EDITOR='code --wait'
-export VISUAL='code --wait'
+export EDITOR='code'
 
 # Aliases - general
 alias c='clear'
