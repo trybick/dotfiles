@@ -1,15 +1,13 @@
 {
-  // *********** Auto-formatting ***********
-  "editor.formatOnPaste": false,
+  "sync.gist": "929d1b58ffe29b3826263ee419337f2d",
   "editor.formatOnSave": true,
-  "eslint.alwaysShowStatus": true,
+  // "editor.formatOnPaste": false,
   "javascript.validate.enable": false, // disable typescript linting to use flow
   "[javascript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
-  "eslint.autoFixOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // *********** End Auto-formatting ***********
+  // "eslint.autoFixOnSave": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -17,7 +15,7 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/tmp": true,
-    "**/node_modules": true,
+    "**/node_modules/*": true,
     "**/bower_components": true,
     "**/dist": true,
     "**/d.ts": true
@@ -30,19 +28,17 @@
     "**/bower_components/**": true,
     "**/dist/**": true
   },
-  "sync.gist": "929d1b58ffe29b3826263ee419337f2d",
   "atomKeymap.promptV3Features": true,
   "breadcrumbs.enabled": false,
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "solid",
-  "editor.cursorWidth": 5,
+  "editor.cursorWidth": 6,
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
   "editor.matchBrackets": false,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.quickSuggestionsDelay": 30,
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
   "editor.rulers": [80, 100],
@@ -54,6 +50,11 @@
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 500,
   "files.trimTrailingWhitespace": true,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.enabled": false,
+  "gitlens.views.repositories.enabled": false,
+  "gitlens.views.fileHistory.location": "scm",
   "javascript.autoClosingTags": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "subtleBrackets.style": {
@@ -64,7 +65,7 @@
   "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "all",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-  "window.zoomLevel": -0.055124232319162525,
+  "window.zoomLevel": 0,
   "workbench.activityBar.visible": false,
   "workbench.colorCustomizations": {
     "scrollbarSlider.background": "#3c5058"
@@ -76,8 +77,18 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "none",
-  "gitlens.currentLine.enabled": false,
   "typescript.tsserver.log": "verbose",
   "typescript.disableAutomaticTypeAcquisition": true,
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "terminal.integrated.scrollback": 10000,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "sync.forceUpload": true,
+  "editor.quickSuggestionsDelay": 30,
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "editor.suggestSelection": "first",
+  "editor.quickSuggestions": true,
+  "typescript.validate.enable": false,
+  "editor.gotoLocation.multiple": "goto",
+  "gitlens.advanced.telemetry.enabled": false,
+  "gitlens.statusBar.enabled": true
 }
