@@ -150,3 +150,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Make sure to set General - Title to "Job" in iTerm preferences
 # May also need to set DISABLE_AUTO_TITLE to true in .zshrc
 echo -ne "\e]1;${PWD##*/}\a"
+
+# Individual history per tab
+unsetopt inc_append_history
+unsetopt share_history
