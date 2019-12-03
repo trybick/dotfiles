@@ -2,6 +2,10 @@
 export NVM_DIR="$HOME/.nvm"
 source /usr/local/opt/nvm/nvm.sh
 
+# Ruby path
+# export GEM_HOME=/Users/timr/.gem
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
