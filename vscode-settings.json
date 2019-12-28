@@ -100,5 +100,8 @@
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.sideBar.location": "left",
 	"workbench.startupEditor": "none",
-	"workbench.tree.renderIndentGuides": "always"
+	"workbench.tree.renderIndentGuides": "always",
+	"editor.matchBrackets": "never",
+	"editor.folding": false,
+	"editor.glyphMargin": false,
 }
