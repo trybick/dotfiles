@@ -9,7 +9,7 @@
   - `brew install nvm`
   - `mkdir ~/.nvm`
   - `nvm install node`
-- Currently used programs: Google Chrome, VSCode, Slack, Docker, Evernote, Spotify, VLC, Trello, MySQLWorkbench, Firefox, FileZilla, Clipy, Amphetamine
+- Programs: Google Chrome, VSCode, Slack, Docker, Evernote, Spotify, VLC, Trello, MySQLWorkbench, Firefox, FileZilla, Clipy, Amphetamine, Scroll Reverser, Logtitech Control Center, Karbiner
 
 # Terminal Setup
 
