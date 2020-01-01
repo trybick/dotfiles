@@ -9,28 +9,19 @@
   - `brew install nvm`
   - `mkdir ~/.nvm`
   - `nvm install node`
-- Programs: Google Chrome, VSCode, Slack, Docker, Evernote, Spotify, VLC, Trello, MySQLWorkbench, Firefox, FileZilla, Clipy, Amphetamine, Scroll Reverser, Logtitech Control Center, Karbiner
+- Programs: Google Chrome, VSCode, Slack, Docker, Evernote, Spotify, VLC, Trello, MySQLWorkbench, Firefox, FileZilla, Clipy, Amphetamine, Scroll Reverser, Logtitech Control Center, Karabiner
 
 # Terminal Setup
 
-### Terminal theme
+Install iTerm2, oh-my-zsh, powerlevel10k, following [this](https://github.com/pugengineer/iTerm2-ohmyzsh-powerlevel9k) as a rough guide.
+
+
+#### Terminal theme
 
 - solarized-dark theme: https://ethanschoonover.com/solarized/
 - monokai theme: https://github.com/stephenway/monokai.terminal/blob/master/README.md
 
-### git auto-completion
-
-https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
-
-- `brew install bash-completion`
-
-### bash-git-prompt
-
-https://github.com/magicmonty/bash-git-prompt
-
-- `brew install bash-git-prompt`
-
-### diff-so-fancy
+#### diff-so-fancy
 
 https://github.com/so-fancy/diff-so-fancy
 
@@ -49,3 +40,27 @@ https://github.com/so-fancy/diff-so-fancy
   - Close the window to save the changes.
 - Disable `Cmd + Q` shortcut
   - Set Cmd Q to 'Application Windows' under keyboard shortcuts
+
+# Mouse / Keyboard
+
+Logitech Control Center
+
+- Remap Forward button to App Expose Ctrl - Down Arrow
+
+Karabiner
+
+- Remap keys as reflected in karabiner.png
+
+# Bash (deprecated - now use zsh)
+
+### git auto-completion
+
+https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
+
+- `brew install bash-completion`
+
+### bash-git-prompt
+
+https://github.com/magicmonty/bash-git-prompt
+
+- `brew install bash-git-prompt`
