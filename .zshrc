@@ -140,8 +140,9 @@ alias gfa='git fetch --all'
 alias gfp='git fetch --all && git pull'
 alias gba='git branch -avv'
 alias gpo='git push origin'
-alias grhh='git reset --hard HEAD'
 alias grc='git rebase --continue'
+alias grhh='git reset --hard HEAD'
+alias grh='f() { git reset HEAD~$1 };f'
 
 # Syntax Highlighting plugin
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
