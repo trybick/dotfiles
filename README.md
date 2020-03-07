@@ -1,35 +1,118 @@
 # New Mac Setup
 
-- Install command-line tools: `xcode-select --install`
+## Basics
+
+- Install command-line tools
+
+```terminal
+xcode-select --install
+```
+
 - Install Homebrew
-  - Paste in terminal:
-    `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-  - Once complete, ensure successful: `brew update && brew doctor`
-- Install nvm/node
-  - `brew install nvm`
-  - `mkdir ~/.nvm`
-  - `nvm install node`
-- Programs: Google Chrome, VSCode, Slack, Docker, Evernote, Spotify, VLC, Trello, MySQLWorkbench, Firefox, FileZilla, Clipy, Amphetamine, Scroll Reverser, Logtitech Control Center, Karabiner
 
-# Terminal Setup
+```terminal
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
 
-Install iTerm2, oh-my-zsh, powerlevel10k, following [this](https://github.com/pugengineer/iTerm2-ohmyzsh-powerlevel9k) as a rough guide.
+- Install nvm/node (https://github.com/nvm-sh/nvm#install--update-script)
 
+```terminal
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+```
 
-#### Terminal theme
+- Install yarn globally
 
-- solarized-dark theme: https://ethanschoonover.com/solarized/
-- monokai theme: https://github.com/stephenway/monokai.terminal/blob/master/README.md
+```terminal
+brew install yarn
+```
 
-#### diff-so-fancy
+- Install global npm packages
 
+```terminal
+npm i -g sass electron tsc typescript
+```
+
+## SSH
+
+- Copy `~/.ssh` over
+- Set permissions `chmod 600 ~/.ssh/*`
+- Activate with `ssh-add ~/.ssh/*`
+
+## Programs
+
+- Google Chrome, VSCode, Slack, Docker, Evernote, Spotify, VLC, Trello, Firefox, FileZilla, Clipy, Amphetamine, Scroll Reverser, Logtitech Control Center, Karabiner
+
+## Terminal
+
+### iTerm2:
+
+```terminal
+brew cask install iterm2
+```
+
+### oh-my-zsh:
+
+```terminal
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+### power-level-10k theme:
+
+```terminal
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+```
+
+Edit `~/.zshrc` and set as default theme: `ZSH_THEME="powerlevel10k/powerlevel10k"`
+
+### zsh Auto Suggestions:
+
+```terminal
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Add `zsh-autosuggestions` to plugins section of `~/.zshrc`
+
+**Important**: Make sure the "Black Bright" color in `iTerm → Preferences → Profiles → Colors` tab is not dark black or the suggestions will be invisible.
+
+### Syntax Highlighting
+
+```terminal
+brew install zsh-syntax-highlighting
+```
+
+Add to the end of `~/.zshrc`: `source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh`
+
+### diff-so-fancy
+
+```terminal
 https://github.com/so-fancy/diff-so-fancy
+```
 
-- `brew install diff-so-fancy`
 - Configure git to use globally: `git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"`
-- Add options for different colors (found on their github)
+- Add options for different colors, found on their github, or use my `.gitconfig`
 
-# Mac OSX Settings
+## Finder
+
+- Force all folders to have the same view settings:
+  - Set the desired view
+  - Cmd + J to open view options
+  - Check top two options: "Always open" and "Browse"
+  - Click "Use as Defaults"
+  - Delete all `.DS_Store` files: `sudo find / -name .DS_Store -delete; killall Finder`
+
+## Display Preferences
+
+- Night Shift enabled: 12 AM to 11:59 PM
+
+## Keyboard Preferences
+
+### Speed
+
+- "Key Repeat" = Fast
+- "Delay Until Repeat" = Short
+- "Touch Bar Shows" = Expanded Control Strip
+
+### Disable annoying shortcuts
 
 - Disable `Cmd + M` shorctut
   - Go to System Preferences > Keyboard > Shortcuts > App Shortcuts
@@ -39,28 +122,20 @@ https://github.com/so-fancy/diff-so-fancy
   - Repeat steps three and four for "Minimise" (alternate spelling) which is required for some apps.
   - Close the window to save the changes.
 - Disable `Cmd + Q` shortcut
-  - Set Cmd Q to 'Application Windows' under keyboard shortcuts
+  - Set Cmd Q to 'Application Windows' under Keyboard shortcuts
 
-# Mouse / Keyboard
+## Mouse
 
-Logitech Control Center
+### Logitech Control Center
 
-- Remap Forward button to App Expose Ctrl - Down Arrow
+- Remap Forward button to "App Expose"
 
-Karabiner
+## Misc
 
-- Remap keys as reflected in karabiner.png
+### Chrome extension "Stylish" style for Microsoft To Do
 
-# Bash (deprecated - now use zsh)
-
-### git auto-completion
-
-https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
-
-- `brew install bash-completion`
-
-### bash-git-prompt
-
-https://github.com/magicmonty/bash-git-prompt
-
-- `brew install bash-git-prompt`
+```terminal
+.todayToolbar, #inbox, .sidebar-lastStaticList {
+    display: none;
+}
+```
