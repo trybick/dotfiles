@@ -126,6 +126,10 @@ https://github.com/so-fancy/diff-so-fancy
 
 ## Mouse
 
+### App Expose trackpad gesture
+
+- Trackpad Preferences --> More Gestures --> Enable three finger swipe up for App Expose
+
 ### Logitech Control Center
 
 - Remap Forward button to "App Expose"
