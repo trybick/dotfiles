@@ -32,6 +32,12 @@ brew install yarn
 npm i -g sass electron tsc typescript
 ```
 
+- Install wget
+
+```terminal
+brew install wget
+```
+
 ## SSH
 
 - Copy `~/.ssh` over
