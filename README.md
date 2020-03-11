@@ -132,9 +132,10 @@ https://github.com/so-fancy/diff-so-fancy
 
 ## Mouse
 
-### App Expose trackpad gesture
+### Trackpad Preferences
 
 - Trackpad Preferences --> More Gestures --> Enable three finger swipe up for App Expose
+- Trackpad Preferences --> Enable "Tap to click"
 
 ### Logitech Control Center
 
