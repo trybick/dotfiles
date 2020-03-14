@@ -20,22 +20,16 @@ xcode-select --install
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-- Install yarn globally
-
-```terminal
-brew install yarn
-```
-
 - Install global npm packages
 
 ```terminal
 npm i -g sass electron tsc typescript
 ```
 
-- Install wget
+- Install global homebrew packages
 
 ```terminal
-brew install wget
+brew install yarn wget
 ```
 
 ## SSH
