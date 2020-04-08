@@ -137,10 +137,9 @@ https://github.com/so-fancy/diff-so-fancy
 
 ## Misc
 
-### Chrome extension "Stylish" style for Microsoft To Do
+### Disable power chime sound (sound when power is plugged in)
 
 ```terminal
-.todayToolbar, #inbox, .sidebar-lastStaticList {
-    display: none;
-}
+defaults write com.apple.PowerChime ChimeOnNoHardware -bool true
+killall PowerChime
 ```
