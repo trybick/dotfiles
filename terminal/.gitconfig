@@ -9,7 +9,7 @@ rebase = true
 autosetuprebase = always
 autosetupmerge = true
 [push]
-default = simple
+default = current
 [core]
 editor = code --wait
 excludesfile = /Users/tim/.gitignore
