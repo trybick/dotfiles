@@ -1,12 +1,6 @@
-# # Load NVM
-# export NVM_DIR="$HOME/.nvm"
-# source /usr/local/opt/nvm/nvm.sh
-# # Node Path
-# export NODE_PATH="$(npm root -g)"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 export ZSH="/Users/tim/.oh-my-zsh"
-
 export EDITOR='code'
 export VISUAL='code'
 
@@ -14,7 +8,6 @@ export VISUAL='code'
 ZSH_THEME="powerlevel10k/powerlevel10k"
 DISABLE_AUTO_TITLE="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
-
 plugins=(
   git
   zsh-autosuggestions
@@ -60,4 +53,5 @@ alias gp='git push'
 alias gpo='git push origin'
 alias grc='git rebase --continue'
 alias grhh='git reset --hard HEAD'
+alias gpf='git push -f'
 alias grh='f() { git reset HEAD~$1 };f'
