@@ -40,7 +40,7 @@ brew install yarn wget
 
 ## Programs
 
-- Google Chrome, VSCode, Slack, Docker, Evernote, Spotify, VLC, Trello, Firefox, FileZilla, Clipy, Amphetamine, Scroll Reverser, Logtitech Control Center, Karabiner
+- Google Chrome, VSCode, Slack, Docker, Evernote, Spotify, VLC, Trello, Firefox, FileZilla, Clipy, Amphetamine, Stay, Postman, Logtitech Control Center, Karabiner, Zoom
 
 ## Terminal
 
