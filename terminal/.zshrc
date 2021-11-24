@@ -54,4 +54,6 @@ alias gpo='git push origin'
 alias grc='git rebase --continue'
 alias grhh='git reset --hard HEAD'
 alias gpf='git push -f'
+alias grs='git restore --staged'
 alias grh='f() { git reset HEAD~$1 };f'
+export PATH="/usr/local/sbin:$PATH"
