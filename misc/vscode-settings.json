@@ -5,12 +5,13 @@
   "atomKeymap.promptV3Features": true,
   "breadcrumbs.enabled": false,
   "breadcrumbs.symbolPath": "off",
+  "debug.javascript.codelens.npmScripts": "never",
   "diffEditor.ignoreTrimWhitespace": false,
   "docker.showStartPage": false,
   "editor.accessibilitySupport": "off",
   "editor.colorDecorators": true,
   "editor.cursorBlinking": "solid",
-  "editor.cursorWidth": 3,
+  "editor.cursorWidth": 10,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -30,7 +31,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.quickSuggestions": true,
   "emmet.excludeLanguages": ["typescriptreact", "javascript", "typescript"],
-  "editor.quickSuggestionsDelay": 30,
+  "editor.quickSuggestionsDelay": 60,
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
   "editor.rulers": [100],
@@ -131,8 +132,8 @@
   "sync.forceUpload": true,
   "sync.gist": "929d1b58ffe29b3826263ee419337f2d",
   "sync.quietSync": true,
-  "telemetry.enableTelemetry": false,
-  "terminal.integrated.fontSize": 15,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.fontSize": 12,
   "terminal.integrated.scrollback": 15000,
   "typescript.autoClosingTags": false,
   "typescript.disableAutomaticTypeAcquisition": true,
@@ -162,10 +163,28 @@
   "workbench.startupEditor": "none",
   "workbench.tree.renderIndentGuides": "always",
   "workbench.tree.indent": 10,
-  "workbench.colorTheme": "One Dark Pro",
   "typescript.preferences.importModuleSpecifier": "relative",
-  "window.zoomLevel": 0,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.preferredDarkColorTheme": "One Dark Pro",
-  "workbench.activityBar.visible": false
+  "json.schemas": [
+    {
+      "name": "vscode-expo-manifest",
+      "url": "file:///Users/tim/Library/Application%20Support/Code/User/globalStorage/bycedric.vscode-expo/manifest-44.0.0.json",
+      "fileMatch": ["app.json", "app.config.json"]
+    }
+  ],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.suggest.preview": true,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.activityBar.visible": false,
+  "ActiveFileInStatusBar.fullpath": false,
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
 }
