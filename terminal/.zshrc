@@ -3,6 +3,7 @@
 export ZSH="/Users/tim/.oh-my-zsh"
 export EDITOR='code'
 export VISUAL='code'
+export PATH="/usr/local/sbin:$PATH"
 
 # ZSH options
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -56,4 +57,3 @@ alias grhh='git reset --hard HEAD'
 alias gpf='git push -f'
 alias grs='git restore --staged'
 alias grh='f() { git reset HEAD~$1 };f'
-export PATH="/usr/local/sbin:$PATH"

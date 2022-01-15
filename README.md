@@ -40,7 +40,7 @@ brew install yarn wget
 
 ## Programs
 
-- Google Chrome, VSCode, Slack, Docker, Evernote, Spotify, VLC, Trello, Firefox, FileZilla, Clipy, Amphetamine, Stay, Postman, Logtitech Control Center, Karabiner, Zoom
+- Google Chrome, VSCode, Spark, Slack, Notion, Docker, Spotify, VLC, Firefox, FileZilla, Clipy, Amphetamine, Stay, Postman, Logtitech Control Center, Karabiner, Zoom, Bluesnooze, gifconvert, Trance Tuner
 
 ## Terminal
 
@@ -128,7 +128,7 @@ https://github.com/so-fancy/diff-so-fancy
 
 ### Trackpad Preferences
 
-- Trackpad Preferences --> More Gestures --> Enable three finger swipe up for App Expose
+- Trackpad Preferences --> More Gestures --> Enable three finger swipe down for App Expose
 - Trackpad Preferences --> Enable "Tap to click"
 
 ### Logitech Control Center
