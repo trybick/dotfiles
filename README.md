@@ -20,19 +20,21 @@ xcode-select --install
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-- Install global npm packages
-
-```terminal
-npm i -g sass electron tsc typescript
-```
-
 - Install global homebrew packages
 
 ```terminal
 brew install yarn wget
 ```
 
+- Install Docker
+
+```terminal
+brew install --cask docker
+```
+
 ## SSH
+
+_Alternativley, use `ssh-keygen -o` to generate new key for github_
 
 - Copy `~/.ssh` over
 - Set permissions `chmod 600 ~/.ssh/*`
@@ -40,23 +42,25 @@ brew install yarn wget
 
 ## Programs
 
-- Google Chrome, VSCode, Spark, Slack, Notion, Docker, Spotify, VLC, Firefox, FileZilla, Clipy, Amphetamine, Stay, Postman, Logtitech Control Center, Karabiner, Zoom, Bluesnooze, gifconvert, Trance Tuner
+_Tip: Use [macappps.link](https://macapps.link/en/) to download mulitple apps at once_
+
+- Google Chrome, VSCode, Spark, Slack, Notion, Spotify, VLC, Firefox, Clipy, Amphetamine, Stay, Postman, Logtitech Control Center, Karabiner, Zoom, Bluesnooze, gifconvert, Trance Tuner
 
 ## Terminal
 
-### iTerm2:
+### iTerm2
 
 ```terminal
-brew cask install iterm2
+brew install --cask iterm2
 ```
 
-### oh-my-zsh:
+### oh-my-zsh
 
 ```terminal
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-### power-level-10k theme:
+### power-level-10k theme
 
 ```terminal
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
@@ -64,7 +68,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/the
 
 Edit `~/.zshrc` and set as default theme: `ZSH_THEME="powerlevel10k/powerlevel10k"`
 
-### zsh Auto Suggestions:
+### zsh Auto Suggestions
 
 ```terminal
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -80,16 +84,19 @@ Add `zsh-autosuggestions` to plugins section of `~/.zshrc`
 brew install zsh-syntax-highlighting
 ```
 
-Add to the end of `~/.zshrc`: `source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh`
+Add to the end of `~/.zshrc`: `source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh`
 
 ### diff-so-fancy
 
 ```terminal
-https://github.com/so-fancy/diff-so-fancy
+brew install diff-so-fancy
+
+# Configure git to use globally
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+git config --global interactive.diffFilter "diff-so-fancy --patch"
 ```
 
-- Configure git to use globally: `git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"`
-- Add options for different colors, found on their github, or use my `.gitconfig`
+- Add options for different colors, found on [their github](https://github.com/so-fancy/diff-so-fancy#improved-colors-for-the-highlighted-bits), or use my `.gitconfig`
 
 ## Finder
 
@@ -110,7 +117,6 @@ https://github.com/so-fancy/diff-so-fancy
 
 - "Key Repeat" = Fast
 - "Delay Until Repeat" = Short
-- "Touch Bar Shows" = Expanded Control Strip
 
 ### Disable annoying shortcuts
 

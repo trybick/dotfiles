@@ -1,5 +1,21 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Bash Completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
+# PATH
 export ZSH="/Users/tim/.oh-my-zsh"
 export EDITOR='code'
 export VISUAL='code'
@@ -15,18 +31,19 @@ plugins=(
   nvm
 )
 
+# Source ZSH
 source $ZSH/oh-my-zsh.sh
-
-# Syntax Highlighting plugin
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Load Powerlevel10k config
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 # Individual history per tab
-unsetopt inc_append_history
-unsetopt share_history
+# unsetopt inc_append_history
+# unsetopt share_history
+
+# ZSH Syntax Highlighting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Aliases
 alias c='clear'
