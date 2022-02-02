@@ -47,7 +47,7 @@ brew install yarn wget
 ### iTerm2:
 
 ```terminal
-brew cask install iterm2
+brew install --cask iterm2
 ```
 
 ### oh-my-zsh:
@@ -80,7 +80,7 @@ Add `zsh-autosuggestions` to plugins section of `~/.zshrc`
 brew install zsh-syntax-highlighting
 ```
 
-Add to the end of `~/.zshrc`: `source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh`
+Add to the end of `~/.zshrc`: `source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh`
 
 ### diff-so-fancy
 
