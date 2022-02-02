@@ -66,11 +66,15 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
 
+Edit `~/.zshrc` and set as default theme: `ZSH_THEME="powerlevel10k/powerlevel10k"`
+
 ### zsh Auto Suggestions
 
 ```terminal
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
+
+Add `zsh-autosuggestions` to plugins section of `~/.zshrc`
 
 **Important**: Make sure the "Black Bright" color in `iTerm → Preferences → Profiles → Colors` tab is not dark black or the suggestions will be invisible.
 
