@@ -93,7 +93,6 @@ alias grhh='git reset --hard HEAD'
 alias gpf='git push -f'
 alias grs='git restore --staged'
 alias grh='f() { git reset HEAD~$1 };f'
-alias grm='git rebase main'
 
 # zsh autosuggestions plugin
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
