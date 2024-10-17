@@ -5,12 +5,31 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# GitLab access key for autostore components library
+# 
+
+# Disable overlay for qubit
+export VITE_DISABLE_OVERLAY=true
+
 # NVM
-export NVM_DIR="$HOME/.nvm"
+export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Android Studio
+# export ANDROID_SDK=/Users/tim/Library/Android/sdk
+# export PATH=/Users/tim/Library/Android/sdk/platform-tools
+export ANDROID_SDK=/Users/tim/Library/Android/sdk
+export PATH=/Users/tim/Library/Android/sdk/platform-tools:$PATH
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Python
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 
 # Bash Completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
@@ -34,13 +53,13 @@ plugins=(
 # Source ZSH
 source $ZSH/oh-my-zsh.sh
 
+# Individual history per tab
+unsetopt inc_append_history
+unsetopt share_history
+
 # Load Powerlevel10k config
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-
-# Individual history per tab
-# unsetopt inc_append_history
-# unsetopt share_history
 
 # ZSH Syntax Highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -74,3 +93,7 @@ alias grhh='git reset --hard HEAD'
 alias gpf='git push -f'
 alias grs='git restore --staged'
 alias grh='f() { git reset HEAD~$1 };f'
+alias grm='git rebase main'
+
+# zsh autosuggestions plugin
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
