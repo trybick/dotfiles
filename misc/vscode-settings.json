@@ -21,31 +21,32 @@
     "css",
     "scss",
     "javascriptreact",
-    "typescriptreact"
+    "typescriptreact",
+    "json"
   ],
   "debug.javascript.codelens.npmScripts": "never",
-  "diffEditor.ignoreTrimWhitespace": false,
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.colorDecorators": true,
   "editor.cursorBlinking": "solid",
   "editor.cursorWidth": 10,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "always"
   },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.folding": false,
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 13.7,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.glyphMargin": false,
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleReferences": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.linkedEditing": true,
   "editor.matchBrackets": "always",
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -58,12 +59,13 @@
   "editor.quickSuggestionsDelay": 60,
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
-  "editor.rulers": [100],
-  "editor.suggest.insertMode": "replace",
+  "editor.rulers": [80],
+  "editor.suggest.insertMode": "insert",
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "emmet.excludeLanguages": ["typescriptreact", "javascript", "typescript"],
   "emmet.showExpandedAbbreviation": "never",
+  "errorLens.excludePatterns": ["**.md"],
   "eslint.workingDirectories": [
     {
       "mode": "auto"
@@ -140,6 +142,7 @@
   "html.format.wrapLineLength": 100,
   "javascript.autoClosingTags": false,
   "javascript.preferences.quoteStyle": "single",
+  "javascript.preferences.jsxAttributeCompletionStyle": "auto",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": true,
   "json.schemas": [
@@ -164,15 +167,13 @@
   "search.useIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
   "security.workspace.trust.enabled": false,
-  "sync.forceUpload": true,
-  "sync.gist": "929d1b58ffe29b3826263ee419337f2d",
-  "sync.quietSync": true,
   "telemetry.telemetryLevel": "off",
-  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.scrollback": 15000,
   "typescript.autoClosingTags": false,
   "typescript.disableAutomaticTypeAcquisition": true,
   "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.jsxAttributeCompletionStyle": "auto",
   "typescript.preferences.quoteStyle": "single",
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -182,7 +183,6 @@
   "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "all",
   "window.title": "${activeEditorShort}${separator}${rootName}",
-  "workbench.activityBar.visible": false,
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#135564",
     "editor.selectionHighlightBackground": "#135564",
@@ -192,7 +192,6 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.openPositioning": "last",
-  "workbench.editor.tabCloseButton": "off",
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.decorations.badges": false,
   "workbench.editor.decorations.colors": true,
@@ -203,5 +202,31 @@
   "workbench.tree.renderIndentGuides": "always",
   "workbench.tree.indent": 10,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.preferredDarkColorTheme": "One Dark Pro"
+  "workbench.preferredDarkColorTheme": "One Dark Pro",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "*.mutable": {
+        "underline": false
+      }
+    }
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "diffEditor.ignoreTrimWhitespace": true,
+  "window.zoomLevel": 0.5227586988632231,
+  "workbench.editor.tabActionCloseVisibility": false,
+  "errorLens.enabled": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "git.openRepositoryInParentFolders": "always",
+  "workbench.activityBar.location": "hidden",
+  "coverage-gutters.showRulerCoverage": true,
+  "coverage-gutters.showLineCoverage": true,
+  "testing.gutterEnabled": false,
+  "window.confirmSaveUntitledWorkspace": false
 }
