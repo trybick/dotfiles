@@ -5,15 +5,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# NPM_TOKEN for Mosaic
+export NPM_TOKEN=""
+
 # GitLab access key for autostore components library
-# 
+export GITLAB_ACCESS_KEY=""
 
 # Disable overlay for qubit
 export VITE_DISABLE_OVERLAY=true
-
-# NVM
-export NVM_DIR=~/.nvm
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -21,15 +20,15 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Android Studio
 # export ANDROID_SDK=/Users/tim/Library/Android/sdk
 # export PATH=/Users/tim/Library/Android/sdk/platform-tools
-export ANDROID_SDK=/Users/tim/Library/Android/sdk
-export PATH=/Users/tim/Library/Android/sdk/platform-tools:$PATH
+# export ANDROID_SDK=/Users/tim/Library/Android/sdk
+# export PATH=/Users/tim/Library/Android/sdk/platform-tools:$PATH
 
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+# export ANDROID_HOME=$HOME/Library/Android/sdk
+# export PATH=$PATH:$ANDROID_HOME/emulator
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Python
-export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
+# export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 
 # Bash Completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
@@ -96,3 +95,10 @@ alias grh='f() { git reset HEAD~$1 };f'
 
 # zsh autosuggestions plugin
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# NVM
+# export NVM_DIR=~/.nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+eval "$(starship init zsh)"
