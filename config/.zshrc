@@ -5,67 +5,70 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# NPM_TOKEN for Mosaic
-export NPM_TOKEN=""
 
+# ------------------- Work stuff -------------------
+# NPM_TOKEN
+export NPM_TOKEN="editme"
 # GitLab access key for autostore components library
-export GITLAB_ACCESS_KEY=""
-
+export GITLAB_ACCESS_KEY="editme"
 # Disable overlay for qubit
 export VITE_DISABLE_OVERLAY=true
 
-# Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Android Studio
-# export ANDROID_SDK=/Users/tim/Library/Android/sdk
-# export PATH=/Users/tim/Library/Android/sdk/platform-tools
-# export ANDROID_SDK=/Users/tim/Library/Android/sdk
-# export PATH=/Users/tim/Library/Android/sdk/platform-tools:$PATH
-
-# export ANDROID_HOME=$HOME/Library/Android/sdk
-# export PATH=$PATH:$ANDROID_HOME/emulator
-# export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# Python
-# export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
-
-# Bash Completion
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
-# PATH
-export ZSH="/Users/tim/.oh-my-zsh"
-export EDITOR='code'
-export VISUAL='code'
-export PATH="/usr/local/sbin:$PATH"
-
-# ZSH options
-ZSH_THEME="powerlevel10k/powerlevel10k"
-DISABLE_AUTO_TITLE="true"
-DISABLE_UNTRACKED_FILES_DIRTY="true"
-plugins=(
-  git
-  zsh-autosuggestions
-  nvm
-)
-
-# Source ZSH
-source $ZSH/oh-my-zsh.sh
-
+# ------------------- History -------------------
 # Individual history per tab
 unsetopt inc_append_history
 unsetopt share_history
+# Set a unique history file for each session
+export HISTFILE=~/.cache/zsh_history/.zsh_history_$$
 
-# Load Powerlevel10k config
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+
+# ------------------- Misc options -------------------
+# Add to `PATH` which determines where the system looks for executable file
+export PATH="/usr/local/sbin:$PATH"
+
+# Set VSCode as default editor for terminal commands
+export EDITOR='code'
+export VISUAL='code'
+
+# Don't update the terminal title
+DISABLE_AUTO_TITLE="true"
+
+# Set the native zsh theme
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+
+# ------------------- Powerlevel10k -------------------
+# Load powerlevel10k config. To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+# Load the powerlevel10k theme
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
-# ZSH Syntax Highlighting
+
+# ------------------- Load installed plugins -------------------
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# zsh Syntax Highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Aliases
+# zsh autosuggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# zoxide (better cd)
+eval "$(zoxide init zsh)"
+
+# ------------------- Aliases -------------------
 alias c='clear'
 alias ll='ls -la'
+
+# eza (better ls)
+alias ls='eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions'
+
+# zoxide
+alias cd="z"
+
+# ------------------- Git aliases -------------------
 alias ga='git add'
 alias gaa='git add .'
 alias gb='git branch'
@@ -84,6 +87,7 @@ alias gds='git diff --staged'
 alias gcane='git commit --amend --no-edit'
 alias gfa='git fetch --all'
 alias gfp='git fetch --all && git pull'
+alias gfo='git fetch origin'
 alias gba='git branch -avv'
 alias gp='git push'
 alias gpo='git push origin'
@@ -93,12 +97,7 @@ alias gpf='git push -f'
 alias grs='git restore --staged'
 alias grh='f() { git reset HEAD~$1 };f'
 
-# zsh autosuggestions plugin
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# NVM
-# export NVM_DIR=~/.nvm
+# ------------------- NVM -------------------
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-eval "$(starship init zsh)"

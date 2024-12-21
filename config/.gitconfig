@@ -5,9 +5,10 @@ email = #editme
 ui = true
 [pull]
 rebase = true
+default = current
 [branch]
 autosetuprebase = always
-autosetupmerge = true
+autoSetupMerge = always
 [push]
 default = current
 [core]
@@ -40,5 +41,7 @@ changed = green
 untracked = cyan
 [merge]
 tool = opendiff
+[interactive]
+diffFilter = diff-so-fancy --patch
 [init]
 defaultBranch = main
