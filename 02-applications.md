@@ -24,7 +24,7 @@
 
 - BetterDisplay
 - Mos
-- Clipy
+- Maccy
 - Amphetamine
 - Stay
 - Logitech Control Center
