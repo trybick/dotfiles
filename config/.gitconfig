@@ -8,7 +8,7 @@ rebase = true
 default = current
 [branch]
 autosetuprebase = always
-autoSetupMerge = always
+autosetupmerge = true
 [push]
 default = current
 [core]
