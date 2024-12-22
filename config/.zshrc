@@ -19,8 +19,6 @@ export VITE_DISABLE_OVERLAY=true
 # Individual history per tab
 unsetopt inc_append_history
 unsetopt share_history
-# Set a unique history file for each session
-export HISTFILE=~/.cache/zsh_history/.zsh_history_$$
 
 
 # ------------------- Misc options -------------------
