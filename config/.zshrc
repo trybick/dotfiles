@@ -58,6 +58,14 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # zoxide (better cd)
 eval "$(zoxide init zsh)"
 
+# zsh completions (primarily for git checkout tab completions)
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
 # ------------------- Aliases -------------------
 alias c='clear'
 alias ll='ls -la'
