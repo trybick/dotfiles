@@ -67,6 +67,7 @@ fi
 # ------------------- Aliases -------------------
 alias c='clear'
 alias ll='ls -la'
+alias sz='source ~/.zshrc'
 
 # eza (better ls)
 alias ls='eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions'
@@ -100,6 +101,10 @@ alias grs='git restore --staged'
 alias grhh='git reset --hard HEAD'
 alias grh='f() { git reset HEAD~$1 };f'
 alias gcp='git cherry-pick'
+alias gst='git stash'
+alias gstpm='git stash push -m'
+alias gstp='git stash pop'
+alias gstl='git stash list'
 
 
 # ------------------- NVM -------------------
