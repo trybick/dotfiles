@@ -18,8 +18,8 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 # zsh plugins
 brew install zsh-autosuggestions zsh-syntax-highlighting zsh-completions
 
-# better ls and cd
-brew install eza zoxide
+# better ls and cd and lazygit
+brew install eza zoxide lazygit
 ```
 
 **Note on autosuggestions**: Make sure the "Black Bright" color in `iTerm → Preferences → Profiles → Colors` tab is not dark black or the suggestions will be invisible.

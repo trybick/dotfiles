@@ -69,9 +69,10 @@ alias c='clear'
 alias ll='ls -la'
 alias sz='source ~/.zshrc'
 
+# lazygit
+alias lg='lazygit'
 # eza (better ls)
 alias ls='eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions'
-
 # zoxide
 alias cd="z"
 
