@@ -106,6 +106,7 @@ alias gst='git stash'
 alias gstpm='git stash push -m'
 alias gstp='git stash pop'
 alias gstl='git stash list'
+alias gsh='git show'
 
 
 # ------------------- NVM -------------------
