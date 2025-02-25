@@ -9,6 +9,7 @@ default = current
 [branch]
 autosetuprebase = always
 autosetupmerge = true
+sort = -committerdate
 [push]
 default = current
 [core]
@@ -45,3 +46,9 @@ tool = opendiff
 diffFilter = diff-so-fancy --patch
 [init]
 defaultBranch = main
+[column]
+ui = auto
+[diff]
+algorithm = histogram
+mnemonicPrefix = true
+renames = true
