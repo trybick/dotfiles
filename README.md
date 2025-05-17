@@ -6,13 +6,13 @@ The [.zshrc](config/.zshrc) file features the powerlevel10k theme and git aliase
 
 ### Docs
 
-- [Installing the basics of a dev environment](first-things.md)
+- [Installing the basics of a dev environment](01-first-things.md)
 
-- [Applications I use](applications.md)
+- [Applications I use](02-applications.md)
 
-- [Configuring the terminal](terminal.md)
+- [Configuring the terminal](03-terminal.md)
 
-- [Misc settings](misc.md)
+- [Misc settings](04-misc.md)
 
 ### Redacted places to be filled in
 
