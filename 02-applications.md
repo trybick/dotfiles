@@ -6,19 +6,17 @@
 
 - Flux
 - Brave
-- VSCode
+- Cursor
 - Spark
 - Slack
 - Notion
 - Spotify
 - VLC
 - Firefox
-- Postman
 - Zoom
 - Bluesnooze
 - Trance Tuner
 - Bitwarden
-- Perplexity
 
 ### Utilities
 

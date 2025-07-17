@@ -49,7 +49,7 @@
   "editor.linkedEditing": true,
   "editor.matchBrackets": "always",
   "editor.minimap.enabled": false,
-  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.multiCursorModifier": "alt",
   "editor.quickSuggestions": {
     "comments": "on",
     "strings": "on",
@@ -167,8 +167,7 @@
   "search.useIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
   "security.workspace.trust.enabled": false,
-  "telemetry.telemetryLevel": "off",
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.scrollback": 15000,
   "typescript.autoClosingTags": false,
   "typescript.disableAutomaticTypeAcquisition": true,
@@ -179,7 +178,6 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.validate.enable": true,
   "update.showReleaseNotes": false,
-  "vscodeGoogleTranslate.preferredLanguage": "English",
   "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "all",
   "window.title": "${activeEditorShort}${separator}${rootName}",
@@ -212,19 +210,11 @@
       }
     }
   },
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
   "diffEditor.ignoreTrimWhitespace": true,
   "window.zoomLevel": 0.5227586988632231,
   "workbench.editor.tabActionCloseVisibility": false,
   "errorLens.enabled": false,
-  "github.copilot.editor.enableAutoCompletions": true,
   "git.openRepositoryInParentFolders": "always",
-  "workbench.activityBar.location": "hidden",
   "coverage-gutters.showRulerCoverage": true,
   "coverage-gutters.showLineCoverage": true,
   "testing.gutterEnabled": false,
@@ -235,5 +225,14 @@
   "window.commandCenter": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.scopes": ["document", "containers"],
-  "gitlens.blame.compact": false
+  "gitlens.blame.compact": false,
+  "editor.guides.bracketPairs": "active",
+  "workbench.activityBar.location": "hidden",
+  "cursor.cpp.disabledLanguages": ["plaintext", "scminput"],
+  "cursor.diffs.useCharacterLevelDiffs": true,
+  "oneDarkPro.vivid": false,
+  "colorize.decoration_type": "underline",
+  "colorize.ruler_decoration": false,
+  "oneDarkPro.italic": false,
+  "githubLocalActions.dockerDesktopPath": "/Applications/Docker.app"
 }
