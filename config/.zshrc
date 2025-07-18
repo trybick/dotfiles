@@ -26,8 +26,8 @@ unsetopt share_history
 export PATH="/usr/local/sbin:$PATH"
 
 # Set VSCode as default editor for terminal commands
-export EDITOR='code'
-export VISUAL='code'
+export EDITOR='cursor'
+export VISUAL='cursor'
 
 # Don't update the terminal title
 DISABLE_AUTO_TITLE="true"
