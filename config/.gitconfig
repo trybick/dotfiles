@@ -1,6 +1,6 @@
 [user]
 name = trybick
-email = #editme
+email = t.rybicki@gmail.com
 [color]
 ui = true
 [pull]
@@ -16,6 +16,7 @@ default = current
 editor = cursor --wait
 excludesfile = ~/.gitignore
 pager = diff-so-fancy | less --tabs=4 -RFX
+	commitGraph = true
 [color]
 branch = auto
 diff = auto
@@ -52,3 +53,13 @@ ui = auto
 algorithm = histogram
 mnemonicPrefix = true
 renames = true
+[credential]
+	helper = store
+[maintenance]
+	repo = /Users/tim/code/autostore/qubit
+[rebase]
+	autoSquash = true
+[sequence]
+	editor = :
+[commit]
+	verbose = false
