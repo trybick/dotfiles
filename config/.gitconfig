@@ -1,65 +1,80 @@
 [user]
-name = trybick
-email = t.rybicki@gmail.com
-[color]
-ui = true
-[pull]
-rebase = true
-default = current
-[branch]
-autosetuprebase = always
-autosetupmerge = true
-sort = -committerdate
-[push]
-default = current
+	name = trybick
+	email = #editme
+
 [core]
-editor = cursor --wait
-excludesfile = ~/.gitignore
-pager = diff-so-fancy | less --tabs=4 -RFX
+	editor = cursor --wait
+	excludesfile = ~/.gitignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
 	commitGraph = true
-[color]
-branch = auto
-diff = auto
-status = auto
-[color "branch"]
-current = yellow reverse
-local = yellow
-remote = green
-[color "diff"]
-meta = "yellow bold"
-commit = "green bold"
-frag = "magenta bold"
-old = "red bold"
-new = "green bold"
-whitespace = "red reverse"
-[color "diff-highlight"]
-oldNormal = "red bold"
-oldHighlight = "red bold 52"
-newNormal = "green bold"
-newHighlight = "green bold 22"
-[color "status"]
-added = yellow
-changed = green
-untracked = cyan
-[merge]
-tool = opendiff
-[interactive]
-diffFilter = diff-so-fancy --patch
+
 [init]
-defaultBranch = main
-[column]
-ui = auto
-[diff]
-algorithm = histogram
-mnemonicPrefix = true
-renames = true
-[credential]
-	helper = store
-[maintenance]
-	repo = /Users/tim/code/autostore/qubit
+	defaultBranch = main
+
+[pull]
+	rebase = true
+	default = current
+
+[push]
+	default = current
+
+[branch]
+	autosetuprebase = always
+	autosetupmerge = true
+	sort = -committerdate
+
+[merge]
+	tool = opendiff
+
 [rebase]
 	autoSquash = true
+
 [sequence]
 	editor = :
+
 [commit]
 	verbose = false
+
+[diff]
+	algorithm = histogram
+	mnemonicPrefix = true
+	renames = true
+
+[interactive]
+	diffFilter = diff-so-fancy --patch
+
+[column]
+	ui = auto
+
+[color]
+	ui = true
+	branch = auto
+	diff = auto
+	status = auto
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = "yellow bold"
+	commit = "green bold"
+	frag = "magenta bold"
+	old = "red bold"
+	new = "green bold"
+	whitespace = "red reverse"
+
+[color "diff-highlight"]
+	oldNormal = "red bold"
+	oldHighlight = "red bold 52"
+	newNormal = "green bold"
+	newHighlight = "green bold 22"
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[credential]
+	helper = store
