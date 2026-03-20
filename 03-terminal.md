@@ -1,9 +1,9 @@
 # Terminal Setup
 
-### Install iterm2
+### Install ghostty
 
 ```terminal
-brew install --cask iterm2
+brew install --cask ghostty
 ```
 
 ### Install power-level-10k theme
@@ -22,7 +22,7 @@ brew install zsh-autosuggestions zsh-syntax-highlighting zsh-completions
 brew install eza zoxide lazygit
 ```
 
-**Note on autosuggestions**: Make sure the "Black Bright" color in `iTerm → Preferences → Profiles → Colors` tab is not dark black or the suggestions will be invisible.
+(Deprecated) **Note on autosuggestions**: Make sure the "Black Bright" color in `iTerm → Preferences → Profiles → Colors` tab is not dark black or the suggestions will be invisible.
 
 ### Setup diff-so-fancy
 
