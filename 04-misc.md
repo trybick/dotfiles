@@ -1,9 +1,5 @@
 # Misc Settings
 
-### Night Shift
-
-- Enabled from 12 AM to 11:59 PM
-
 ### Keyboard Speed
 
 - "Key Repeat" = Fast
@@ -14,12 +10,12 @@
 - Disable `Cmd + M` shorctut
   - Go to System Preferences > Keyboard > Shortcuts > App Shortcuts
   - Click the Plus Button button below
-  - Enter "Minimize" (use "Minimize All" to override minimizing all windows with ⌥⌘M) into the Menu Title text input field.
+  - Enter "Minimize"
   - Assign some bizzare key combination that you won't press by accident.
   - Repeat steps three and four for "Minimise" (alternate spelling) which is required for some apps.
   - Close the window to save the changes.
 - Disable `Cmd + Q` shortcut
-  - Set Cmd Q to 'Application Windows' under Keyboard shortcuts
+  - Set Cmd Q to something else under Mission Control section
 
 ### Force all folders to have the same view settings:
 
