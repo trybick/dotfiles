@@ -12,10 +12,10 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-### Install global homebrew packages
+### Install homebrew packages
 
 ```terminal
-brew install yarn wget
+brew install wget docker
 ```
 
 ### Install nvm
@@ -24,12 +24,6 @@ https://github.com/nvm-sh/nvm#install--update-script
 
 ```terminal
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-```
-
-### Install Docker
-
-```terminal
-brew install --cask docker
 ```
 
 ### Setup SSH
