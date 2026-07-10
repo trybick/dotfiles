@@ -23,7 +23,7 @@ unsetopt share_history
 
 # ------------------- Misc options -------------------
 # Add to `PATH` which determines where the system looks for executable file
-export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
 
 # Set VSCode as default editor for terminal commands
 export EDITOR='cursor'
