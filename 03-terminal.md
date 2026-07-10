@@ -22,8 +22,6 @@ brew install zsh-autosuggestions zsh-syntax-highlighting zsh-completions
 brew install eza zoxide lazygit
 ```
 
-(Deprecated) **Note on autosuggestions**: Make sure the "Black Bright" color in `iTerm → Preferences → Profiles → Colors` tab is not dark black or the suggestions will be invisible.
-
 ### Setup diff-so-fancy
 
 ```terminal
