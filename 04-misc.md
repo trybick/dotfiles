@@ -1,5 +1,9 @@
 # Misc Settings
 
+### Night Shift
+
+- Enabled from 12 AM to 11:59 PM (yes Night Shift and Flux both enabled)
+
 ### Keyboard Speed
 
 - "Key Repeat" = Fast
