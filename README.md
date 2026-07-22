@@ -17,6 +17,7 @@ The [.zshrc](config/.zshrc) file features the powerlevel10k theme and git aliase
 | `config/.gitconfig`       | `~/.gitconfig`                       |
 | `config/.p10k.zsh`        | `~/.p10k.zsh`                        |
 | `config/ghostty.config`   | `~/.config/ghostty/config`           |
+| `config/lazygit.config`   | `~/Library/Application Support/lazygit/config.yml` |
 | `keyboard/karabiner.json` | `~/.config/karabiner/karabiner.json` |
 
 ---
